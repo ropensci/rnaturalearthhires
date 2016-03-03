@@ -1,5 +1,6 @@
 Package: rnaturalearthhires
-Title: High Resolution World Vector Map Data from Natural Earth used in rnaturalearth
+Title: High Resolution World Vector Map Data from Natural Earth used in
+    rnaturalearth
 Version: 0.0.0.9000
 Authors@R: person("Andy", "South", , "southandy@gmail.com", role = c("aut", "cre"))
 Description: Facilitates mapping by making natural earth map data from http://
@@ -13,9 +14,9 @@ BugReports: https://github.com/AndySouth/rnaturalearthhires/issues
 Depends:
     R (>= 3.1.1)
 Imports:
-    sp (>= 1.0.15),
-    rgdal
+    sp (>= 1.0.15)
 Suggests:
     knitr,
     testthat (>= 0.9.1)
 VignetteBuilder: knitr
+RoxygenNote: 5.0.1

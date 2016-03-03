@@ -4,7 +4,7 @@
 #'
 #' @name rnaturalearthhires
 #' @docType package
-#' @seealso ne_countries
+#' @seealso  \code{\link[rnaturalearth]{ne_countries}} \code{\link[rnaturalearth]{ne_states}} \code{\link[rnaturalearth]{ne_download}}
 #' @import sp
 NULL
 
