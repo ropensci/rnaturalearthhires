@@ -16,7 +16,7 @@ Depends:
 Imports:
     sp (>= 1.0.15)
 Suggests:
-    knitr,
+    knitr (>= 1.12.3),
     testthat (>= 0.9.1)
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
