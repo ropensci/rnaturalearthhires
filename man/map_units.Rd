@@ -4,6 +4,7 @@
 \name{map_units}
 \alias{map_units}
 \alias{map_units10}
+\alias{map_units10}
 \title{world map_unit polygons from Natural Earth}
 \format{A \code{SpatialPolygonsDataFrame}}
 \source{
@@ -21,5 +22,5 @@ There are more map_units than countries e.g. United Kingdom is split into Englan
 \describe{
 \item{\code{data}}{A data frame with attributes}
 }}
-\keyword{datasets}
 
+\keyword{datasets}

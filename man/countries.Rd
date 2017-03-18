@@ -4,6 +4,7 @@
 \name{countries}
 \alias{countries}
 \alias{countries10}
+\alias{countries10}
 \title{world country polygons from Natural Earth}
 \format{A \code{SpatialPolygonsDataFrame}}
 \source{
@@ -20,5 +21,5 @@ at scale 1:10m (large)
 \describe{
 \item{\code{data}}{A data frame with country attributes}
 }}
-\keyword{datasets}
 
+\keyword{datasets}

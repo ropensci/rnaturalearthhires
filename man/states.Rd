@@ -4,6 +4,7 @@
 \name{states}
 \alias{states}
 \alias{states10}
+\alias{states10}
 \title{state (admin level 1) polygons from Natural Earth}
 \format{A \code{SpatialPolygonsDataFrame}}
 \source{
@@ -20,5 +21,5 @@ For all world countries at scale 1:10m (high).
 \describe{
 \item{\code{data}}{A data frame with attributes}
 }}
-\keyword{datasets}
 
+\keyword{datasets}

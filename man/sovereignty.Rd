@@ -4,6 +4,7 @@
 \name{sovereignty}
 \alias{sovereignty}
 \alias{sovereignty10}
+\alias{sovereignty10}
 \title{world sovereignty polygons from Natural Earth}
 \format{A \code{SpatialPolygonsDataFrame}}
 \source{
@@ -21,5 +22,5 @@ There are fewer sovereign states than countries e.g. the Falkland Islands are in
 \describe{
 \item{\code{data}}{A data frame with attributes}
 }}
-\keyword{datasets}
 
+\keyword{datasets}
