@@ -1,0 +1,36 @@
+on:
+  push:
+    paths:
+      - 'release-versions/*'
+
+jobs:
+  generate-rda:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::rnaturalearth
+          needs: rnaturalearth
+
+      - name: Download data
+        run: |
+          source("data-raw/data-download-script.r")
+        shell: Rscript {0}
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git add data/
+          git commit -m "Update data to newest Natural Earth release" || echo "No changes to commit"
+          git pull --ff-only
+          git push origin
