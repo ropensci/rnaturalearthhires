@@ -23,8 +23,8 @@ coastline10 <- ne_download(scale=10, type='coastline', category='physical')
 
 
 #to allow same operation on all data objects in the package
-data_object_names <- data(package = "rnaturalearthhires")[["results"]][,"Item"]
-
+# data_object_names <- data(package = "rnaturalearthhires")[["results"]][,"Item"]
+data_object_names <- c("coastline10", "countries10", "mapunits10", "sovereignty10", "states10")
 
 #### saving data files to correct folder in the package
 #this relies on working directory being set to root of the package
