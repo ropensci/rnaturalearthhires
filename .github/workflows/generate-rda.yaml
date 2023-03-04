@@ -1,3 +1,4 @@
+name: Download NE data
 on:
   push:
     paths:
@@ -23,7 +24,7 @@ jobs:
 
       - name: Download data
         run: |
-          source("data-raw/data-download-script.r")
+          source("data-raw/data_download_script.r")
         shell: Rscript {0}
 
       - name: Commit and push changes
