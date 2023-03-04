@@ -37,5 +37,5 @@ for (i in 1:length(data_object_names))
   data_name <- data_object_names[i]
   #eval(parse(text=paste0("save(",data_name,", file='data/",data_name,".rda'")))
   #this sorts compression
-  eval(parse(text=paste0("devtools::use_data(",data_name,", compress='xz', overwrite=TRUE)")))
+  eval(parse(text=paste0("usethis::use_data(",data_name,", compress='xz', overwrite=TRUE)")))
 }
