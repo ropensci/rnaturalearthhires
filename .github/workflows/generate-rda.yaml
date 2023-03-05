@@ -2,7 +2,7 @@ name: Download NE data
 on:
   push:
     paths:
-      - 'release-versions/*'
+      - 'release-versions/natural-earth-vector-latest.txt'
 
 jobs:
   generate-rda:
