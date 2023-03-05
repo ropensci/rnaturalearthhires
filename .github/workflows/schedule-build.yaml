@@ -15,7 +15,7 @@ jobs:
           jq -r ".tag_name" > release-versions/natural-earth-vector-latest.txt
       - name: Check for modified files
         id: git-check
-        run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
+        run: echo modified=$([ -z "`git status --porcelain`" ] && echo "false" || echo "true") >> $GITHUB_OUTPUT
       - name: Commit latest release version
         if: steps.git-check.outputs.modified == 'true'
         run: |
@@ -23,4 +23,4 @@ jobs:
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git add release-versions/natural-earth-vector-latest.txt
           git commit -m "New release version"
-          git push
+          git push origin
