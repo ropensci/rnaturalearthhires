@@ -7,9 +7,9 @@ jobs:
   get-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.REPO_SCOPED_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Fetch release version
         run: |
           curl -sL https://api.github.com/repos/nvkelso/natural-earth-vector/releases/latest | \
@@ -20,7 +20,8 @@ jobs:
       - name: Commit latest release version
         if: steps.git-check.outputs.modified == 'true'
         run: |
-          git config --global user.name 'Your Name'
-          git config --global user.email 'your-email@users.noreply.github.com'
-          git commit -am "New release version"
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git add release-versions/natural-earth-vector-latest.txt
+          git commit -m "New release version"
           git push
