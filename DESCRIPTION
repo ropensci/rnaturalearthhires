@@ -2,7 +2,27 @@ Package: rnaturalearthhires
 Title: High Resolution World Vector Map Data from Natural Earth used in
     rnaturalearth
 Version: 0.2.0
-Authors@R: person("Andy", "South", , "southandy@gmail.com", role = c("aut", "cre"))
+Authors@R: c(
+  person(
+    family = "South",
+    given = "Andy",
+    email = "southandy@gmail.com",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0003-4051-6135")
+  ),
+  person(
+    family = "Michael",
+    given = "Schramm",
+    email = "mpschramm@gmail.com",
+    role = c("aut")
+  ),
+  person(
+    family = "Massicotte",
+    given = "Philippe",
+    email = "pmassicotte@hotmail.com",
+    role = c("aut"),
+    comment = c(ORCID = "0000-0002-5919-4116")
+  ))
 Description: Facilitates mapping by making natural earth map data from http://
     www.naturalearthdata.com/ more easily available to R users. Focuses on vector
     data.
