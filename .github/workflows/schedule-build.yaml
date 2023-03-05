@@ -49,3 +49,7 @@ jobs:
           git commit -m "Update data to newest Natural Earth release" || echo "No changes to commit"
           git pull --ff-only
           git push origin
+          
+      - name: Bump package version
+        if: steps.git-check.outputs.modified == 'true'
+        run: R -e "usethis::use_version('patch')"
