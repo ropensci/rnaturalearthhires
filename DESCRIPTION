@@ -1,7 +1,7 @@
 Package: rnaturalearthhires
 Title: High Resolution World Vector Map Data from Natural Earth used in
     rnaturalearth
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
   person(
     family = "South",
