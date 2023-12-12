@@ -1,7 +1,7 @@
 Package: rnaturalearthhires
 Title: High Resolution World Vector Map Data from Natural Earth used in
     rnaturalearth
-Version: 0.2.1
+Version: 1.0.0
 Authors@R: c(
   person(
     family = "South",
@@ -39,4 +39,4 @@ Suggests:
     knitr (>= 1.12.3),
     testthat (>= 0.9.1)
 VignetteBuilder: knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 7.2.3
