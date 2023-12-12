@@ -4,9 +4,12 @@
 \name{states}
 \alias{states}
 \alias{states10}
-\alias{states10}
 \title{state (admin level 1) polygons from Natural Earth}
-\format{A \code{SpatialPolygonsDataFrame}}
+\format{
+A \code{SpatialPolygonsDataFrame}
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 4596 rows and 122 columns.
+}
 \source{
 \url{http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_1_states.zip}
 }

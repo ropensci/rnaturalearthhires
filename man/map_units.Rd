@@ -4,9 +4,12 @@
 \name{map_units}
 \alias{map_units}
 \alias{map_units10}
-\alias{map_units10}
 \title{world map_unit polygons from Natural Earth}
-\format{A \code{SpatialPolygonsDataFrame}}
+\format{
+A \code{SpatialPolygonsDataFrame}
+
+An object of class \code{sf} (inherits from \code{data.frame}) with 298 rows and 169 columns.
+}
 \source{
 \url{http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_map_units.zip}
 }
