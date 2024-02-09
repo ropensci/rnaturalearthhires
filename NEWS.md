@@ -1,3 +1,5 @@
+# rnaturalearthhires (development version)
+
 # rnaturalearthhires 1.0.0
 
 ## Breaking changes
