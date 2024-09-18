@@ -7,7 +7,7 @@
 \alias{coastline10}
 \title{world coastlines from Natural Earth}
 \format{
-A \code{SpatialLinesDataFrame}
+A \code{sf} \code{data.frame}
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 4133 rows and 4 columns.
 }
