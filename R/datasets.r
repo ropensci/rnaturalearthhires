@@ -2,7 +2,7 @@
 #'
 #' at scale 1:10m (large)
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format A \code{sf} \code{data.frame}
 #' @slot data A data frame with country attributes
 #' @aliases countries10
 #' @name countries
@@ -18,7 +18,7 @@ NULL
 #' map_unit polygons at scale 1:10m (large).
 #' There are more map_units than countries e.g. United Kingdom is split into England, Scotland, Wales and Northern Ireland.
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format A \code{sf} \code{data.frame}
 #' @slot data A data frame with attributes
 #' @name map_units
 #' @aliases map_units10
@@ -35,7 +35,7 @@ NULL
 #' sovereignty polygons at scale 1:10m (large).
 #' There are fewer sovereign states than countries e.g. the Falkland Islands are included with the United Kingdom.
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format A \code{sf} \code{data.frame}
 #' @slot data A data frame with attributes
 #' @aliases sovereignty10
 #' @name sovereignty
@@ -51,7 +51,7 @@ NULL
 #'
 #' For all world countries at scale 1:10m (high).
 #'
-#' @format A \code{SpatialPolygonsDataFrame}
+#' @format A \code{sf} \code{data.frame}
 #' @slot data A data frame with attributes
 #' @aliases states10
 #' @name states
@@ -66,7 +66,7 @@ NULL
 #'
 #' coastline lines at scale 1:10m (large).
 #'
-#' @format A \code{SpatialLinesDataFrame}
+#' @format A \code{sf} \code{data.frame}
 #' @aliases coastlines10
 #' @name coastlines
 NULL

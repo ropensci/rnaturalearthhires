@@ -2,6 +2,7 @@
 % Please edit documentation in R/rnaturalearthhires-package.r
 \docType{package}
 \name{rnaturalearthhires}
+\alias{rnaturalearthhires-package}
 \alias{rnaturalearthhires}
 \title{rnaturalearthhires : high resolution world vector maps from Natural Earth}
 \description{
@@ -9,4 +10,14 @@ Facilitates world mapping by making \href{http://www.naturalearthdata.com/}{Natu
 }
 \seealso{
 \code{\link[rnaturalearth]{ne_countries}} \code{\link[rnaturalearth]{ne_states}} \code{\link[rnaturalearth]{ne_download}}
+}
+\author{
+\strong{Maintainer}: Andy South \email{southandy@gmail.com} (\href{https://orcid.org/0000-0003-4051-6135}{ORCID})
+
+Authors:
+\itemize{
+  \item Schramm Michael \email{mpschramm@gmail.com}
+  \item Philippe Massicotte \email{pmassicotte@hotmail.com} (\href{https://orcid.org/0000-0002-5919-4116}{ORCID})
+}
+
 }

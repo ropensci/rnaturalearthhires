@@ -6,7 +6,7 @@
 \alias{sovereignty10}
 \title{world sovereignty polygons from Natural Earth}
 \format{
-A \code{SpatialPolygonsDataFrame}
+A \code{sf} \code{data.frame}
 
 An object of class \code{sf} (inherits from \code{data.frame}) with 209 rows and 169 columns.
 }
