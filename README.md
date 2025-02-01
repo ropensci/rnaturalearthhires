@@ -20,4 +20,4 @@ install.packages("rnaturalearthhires", repos = "https://ropensci.r-universe.dev"
 
 Note rnaturalearthhires is unlikely to be submitted to CRAN because its size exceeds CRAN recommendations.
 
-[![ropensci\_footer](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![ropensci\_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
