@@ -43,12 +43,10 @@ jobs:
         run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git add release-versions/natural-earth-vector-latest.txt
-          git commit -m "New release version"
-          git add data/
-          git commit -m "Update data to newest Natural Earth release" || echo "No changes to commit"
           git pull --ff-only
-          git push origin
+          git add release-versions/natural-earth-vector-latest.txt data/
+          git commit -m "Update data to newest Natural Earth release" || echo "No changes to commit"
+          git push origin HEAD:$GITHUB_REF_NAME
 
       - name: Bump package version
         if: steps.git-check.outputs.modified == 'true'
